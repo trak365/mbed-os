@@ -196,13 +196,13 @@ void xdot_enter_stop_mode()
     GPIO_InitStruct.Mode = GPIO_MODE_ANALOG;
     GPIO_InitStruct.Pull = GPIO_NOPULL;
     HAL_GPIO_Init(GPIOC, &GPIO_InitStruct);
-
+/*
     // SWDIO & SWCLK to analog nopull
     GPIO_InitStruct.Pin = GPIO_PIN_13 | GPIO_PIN_14;
     GPIO_InitStruct.Mode = GPIO_MODE_ANALOG;
     GPIO_InitStruct.Pull = GPIO_NOPULL;
     HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);
-
+*/
     // OSC32_IN & OSC32_OUT to analog nopull
     GPIO_InitStruct.Pin = GPIO_PIN_14 | GPIO_PIN_15;
     GPIO_InitStruct.Mode = GPIO_MODE_ANALOG;
